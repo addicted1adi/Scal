@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33B5E5"
+    android:orientation="vertical" 
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#9933CC"
+        android:layout_weight="0.27"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9933CC"
+            android:gravity="center"
+            android:text="SmartCalc"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="44sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/beech"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_weight="0.5" >
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="48dp"
+            android:layout_marginRight="42dp"
+            android:src="@drawable/button_design1"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_marginLeft="46dp"
+            android:src="@drawable/extende_icon" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/imageButton2"
+            android:layout_alignTop="@+id/imageButton4"
+            android:src="@drawable/extendedbutton2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButton2"
+            android:layout_alignLeft="@+id/imageButton2"
+            android:text="CalC"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/imageButton1"
+            android:text="BMI"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButton3"
+            android:layout_alignLeft="@+id/imageButton3"
+            android:text="SciFi"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButton4"
+            android:layout_alignLeft="@+id/imageButton4"
+            android:text="About"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/extendebutton1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.23"
+        android:background="#9933EE"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</LinearLayout>
